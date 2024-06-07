@@ -1,0 +1,33 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<sap.ui.layout:VerticalLayout xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="layout0">
+		<sap.ui.layout:content>
+			<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="bdeQuantityForm0">
+				<sap.ui.layout.form:formContainers>
+					<sap.ui.layout.form:FormContainer id="bdeQuantityContainer0">
+						<sap.ui.layout.form:formElements>
+							<sap.ui.layout.form:FormElement label="GUT-Menge" id="bdeQuantityElement0">
+								<sap.ui.layout.form:fields>
+									<Input id="bdeQuantityYield" placeholder="0" type="Number"/>
+								</sap.ui.layout.form:fields>
+							</sap.ui.layout.form:FormElement>
+							<sap.ui.layout.form:FormElement label="Ausschuss-Menge" id="bdeQuantityElement1">
+								<sap.ui.layout.form:fields>
+									<Input id="bdeQuantityScrap" placeholder="0" type="Number"/>
+								</sap.ui.layout.form:fields>
+							</sap.ui.layout.form:FormElement>
+							<sap.ui.layout.form:FormElement id="bdeQuantityElement2">
+								<sap.ui.layout.form:fields>
+									<Button xmlns="sap.m" text="Mengen bestätigen" id="btnQuantityConfirm" type="Emphasized" width="100%"
+										class="myCustomButton sapUiSmallMarginTop" press="handleQuantityConfirm"/>
+								</sap.ui.layout.form:fields>
+							</sap.ui.layout.form:FormElement>
+						</sap.ui.layout.form:formElements>
+					</sap.ui.layout.form:FormContainer>
+				</sap.ui.layout.form:formContainers>
+				<sap.ui.layout.form:layout>
+					<sap.ui.layout.form:ResponsiveGridLayout id="bdeDetailLayout0"/>
+				</sap.ui.layout.form:layout>
+			</sap.ui.layout.form:Form>
+		</sap.ui.layout:content>
+	</sap.ui.layout:VerticalLayout>
+</core:FragmentDefinition>

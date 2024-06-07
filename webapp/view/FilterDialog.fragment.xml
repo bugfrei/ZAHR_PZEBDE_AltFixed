@@ -1,0 +1,12 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ViewSettingsDialog confirm="handleFilterDialogConfirm">
+		<filterItems>
+			<ViewSettingsFilterItem text="Zeitevent" key="tmvnt" multiSelect="false">
+				<items>
+					<ViewSettingsItem text="Kommen" key="tmvnt___EQ___Kommen___X"/>
+					<ViewSettingsItem text="Gehen" key="tmvnt___EQ___Gehen___X"/>
+				</items>
+			</ViewSettingsFilterItem>
+		</filterItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

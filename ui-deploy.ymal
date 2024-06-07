@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "1.0"
+metadata:
+  name: zahr_pzebde.zahr_pzebde
+type: application
+resources:
+  configuration:
+    propertiesFileSourceEncoding: UTF-8
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          url: http://ztsapsfd01.ztue.local:8443
+          client: "100"
+        app:
+          name: ZAHR_PZEBDE
+          description: Redeployment Version 1
+          package: ZAHR_PZEBDE
+          transport: S4DK913185
+        exclude:
+          - /test/

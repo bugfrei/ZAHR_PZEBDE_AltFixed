@@ -1,0 +1,19 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ViewSettingsDialog confirm="handleFilterDialogConfirmBde">
+		<filterItems>
+			<ViewSettingsFilterItem text="Zeitevent" key="tmvnt" multiSelect="false">
+				<items>
+					<ViewSettingsItem text="Fertigungsauftrag Beginn" key="tmvnt___EQ___Fertigungsauftrag Beginn___X"/>
+					<ViewSettingsItem text="Fertigungsauftrag Pause" key="tmvnt___EQ___Fertigungsauftrag Pause___X"/>
+					<ViewSettingsItem text="Fertigungsauftrag Ende" key="tmvnt___EQ___Fertigungsauftrag Ende___X"/>
+					<ViewSettingsItem text="Serviceauftrag Beginn" key="tmvnt___EQ___Serviceauftrag Beginn___X"/>
+					<ViewSettingsItem text="Serviceauftrag Pause" key="tmvnt___EQ___Serviceauftrag Pause___X"/>
+					<ViewSettingsItem text="Serviceauftrag Ende" key="tmvnt___EQ___Serviceauftrag Ende___X"/>
+					<ViewSettingsItem text="Projekt Beginn" key="tmvnt___EQ___Projekt Beginn___X"/>
+					<ViewSettingsItem text="Projekt Pause" key="tmvnt___EQ___Projekt Pause___X"/>
+					<ViewSettingsItem text="Projekt Ende" key="tmvnt___EQ___Projekt Ende___X"/>
+				</items>
+			</ViewSettingsFilterItem>
+		</filterItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

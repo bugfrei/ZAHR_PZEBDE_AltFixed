@@ -1,0 +1,152 @@
+{
+    "resources": [
+        {
+            "name": "model/models-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "serviceBinding.js"
+        },
+        {
+            "name": "model/models.js"
+        },
+        {
+            "name": "F4ValueHelp.js"
+        },
+        {
+            "name": "controller/PZEBDE.controller.js"
+        },
+        {
+            "name": "controller/NotFound.controller.js"
+        },
+        {
+            "name": "controller/Login.controller.js"
+        },
+        {
+            "name": "controller/Formatter.js"
+        },
+        {
+            "name": "controller/CustomBtn.js"
+        },
+        {
+            "name": "controller/BaseController.js"
+        },
+        {
+            "name": "controller/App.controller.js"
+        },
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "manifest-bundle.zip"
+        },
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "controller/Formatter-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "serviceBinding-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "manifest.json"
+        },
+        {
+            "name": "F4ValueHelp-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/PZEBDE-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/NotFound-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/Login-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/CustomBtn-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/BaseController-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/App-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "Component-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../sap-ui-version.json"
+        },
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "di.code-validation.core_issues.json"
+        },
+        {
+            "name": "view/ValueHelp.fragment.xml"
+        },
+        {
+            "name": "view/SortDialogBde.fragment.xml"
+        },
+        {
+            "name": "view/SortDialog.fragment.xml"
+        },
+        {
+            "name": "view/QuantityPopup.fragment.xml"
+        },
+        {
+            "name": "view/PZEBDE.view.xml"
+        },
+        {
+            "name": "view/NotFound.view.xml"
+        },
+        {
+            "name": "view/Login.view.xml"
+        },
+        {
+            "name": "view/GroupDialogBde.fragment.xml"
+        },
+        {
+            "name": "view/GroupDialog.fragment.xml"
+        },
+        {
+            "name": "view/FilterDialogBde.fragment.xml"
+        },
+        {
+            "name": "view/FilterDialog.fragment.xml"
+        },
+        {
+            "name": "view/App.view.xml"
+        },
+        {
+            "name": "localService/ZAHR_PZEBDE_GET_FA_PSP_SRV/metadata.xml"
+        },
+        {
+            "name": "localService/metadata.xml"
+        },
+        {
+            "name": "index.html"
+        },
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "css/style.css"
+        }
+    ]
+}

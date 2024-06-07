@@ -1,0 +1,18 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZAHR_PZEBDE_GET_FA_PSP_SRV" xml:lang="de" sap:schema-version="1">
+			<EntityType Name="ZAHR_PZEBDE" sap:content-version="1">
+				<Key><PropertyRef Name="Pernr"/><PropertyRef Name="Datum"/><PropertyRef Name="Uzeit"/><PropertyRef Name="Tmvnt"/></Key><Property Name="Pernr" Type="Edm.String" Nullable="false" MaxLength="8" sap:unicode="false" sap:label="Personalnr" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Datum" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:label="aktuelles Datum"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Uzeit" Type="Edm.Time" Nullable="false" Precision="0" sap:unicode="false" sap:label="Uhrzeit" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Tmvnt" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="PZEBDE Timeevent"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zausw" Type="Edm.String" Nullable="false" MaxLength="8" sap:unicode="false" sap:label="Zeitausw.nr." sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Aufnr" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="Auftrag" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Pspnr" Type="Edm.String" Nullable="false" MaxLength="24" sap:unicode="false" sap:label="Projektdef." sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Autop" Type="Edm.Boolean" Nullable="false" sap:unicode="false" sap:label="PZE BDE Automatisch in Pause"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityContainer Name="ZAHR_PZEBDE_GET_FA_PSP_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="ZAHR_PZEBDESet" EntityType="ZAHR_PZEBDE_GET_FA_PSP_SRV.ZAHR_PZEBDE" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/></EntityContainer><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZAHR_PZEBDE_GET_FA_PSP_SRV/$metadata"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZAHR_PZEBDE_GET_FA_PSP_SRV/$metadata"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

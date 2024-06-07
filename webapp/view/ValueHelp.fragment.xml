@@ -1,0 +1,25 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<SelectDialog>
+		noDataText="Keine Arbeitsplätze gefunden"
+		title="Arbeitsplatz wählen"
+		search="handleSearch"
+		confirm="handleValueHelpClose"
+		cancel="handleValueHelpClose"
+		<!--showClearButton="true"-->
+		items="{
+			path : '/workStationCollection',
+			sorter : {
+				path : 'workstation',
+				descending : false
+			}
+		}">
+		<StandardListItem selected="{selected}"
+			title="{workstationDescription}"
+			description="{workstation}"
+			iconDensityAware="false"
+			iconInset="false"
+			type="Active" />
+	</SelectDialog>
+</core:FragmentDefinition>

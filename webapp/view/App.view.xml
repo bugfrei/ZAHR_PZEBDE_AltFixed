@@ -1,0 +1,18 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ZAHR_PZEBDE.ZAHR_PZEBDE.controller.App" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+<!--			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<VBox width="100%" direction="Column" id="vbox0" alignContent="Center" alignItems="Center">
+							<items>
+								<Input xmlns="sap.m" id="i nputAusweisnummer" placeholder="Ausweisnummer" required="true" type="Number" width="300px" fieldWidth="100%"/>
+								<Button xmlns="sap.m" text="{i18n>Login}" press="onLogin" type="Emphasized" id="buttonLogin" width="300px"/>
+							</items>
+						</VBox>
+					</content>
+				</Page>
+			</pages>-->
+		</App>
+	</Shell>
+</mvc:View>
