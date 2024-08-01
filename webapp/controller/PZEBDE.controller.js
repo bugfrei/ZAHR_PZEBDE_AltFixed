@@ -53,7 +53,9 @@ sap.ui.define(
         this.initValues();
         var i = new sap.ui.model.json.JSONModel();
         this.getView().setModel(i);
+        console.log("Init delayedCall (500ms) for resetTimer (erste idleTimer Initialisierung!)");
         jQuery.sap.delayedCall(500, this, function () {
+          console.log(`  delayedCall, resetTimer Call, idleSeconds=${this.idleSeconds} (soll > 0)`);
           this.resetTimer();
         });
       },
@@ -62,7 +64,10 @@ sap.ui.define(
         var i = {
           success: function (t, i) {
             e.idleSeconds = i.data.results[0].idleSeconds;
+            console.log("initValues, PzeBdeInitSet Response");
+            console.log(`  idleSeconds = ${e.idleSeconds}`);
             e.stView = i.data.results[0].stView;
+            console.log(`  stView = ${e.stView}`);
             if (e.stView === "BDE") {
               e.getView().byId("bar0").setSelectedKey("__xmlview1--filter1");
               e.getCurrentOperationsList();
@@ -77,6 +82,7 @@ sap.ui.define(
             t.show(i.error.message.value, { closeOnBrowserNavigation: false });
           },
         };
+        console.log("initValue / PzeBdeInitSet Request");
         this.oModel.read("/PzeBdeInitSet", i);
       },
       onAfterRendering: function () {
@@ -94,16 +100,24 @@ sap.ui.define(
         }
       },
       resetTimer: function (e) {
+        console.log("resetTimer (call)");
         if (!this.idleSeconds) {
           return;
         }
         if (this._navBackIsClicked) {
           return;
         }
+        console.log("clearTimerout (call)");
         clearTimeout(this.idleTimer);
+        console.log(`resetTimer: this._xmlViewId = ${this._xmlViewId} (soll=__xmlview1)`);
         if (this._xmlViewId === "__xmlview1") {
+          console.log(`setTimeout (call), this.idleSeconds = ${this.idleSeconds}`);
           this.idleTimer = setTimeout(function () {
-            this.history.back();
+          console.log("Timeout - Zurück zur Login-Seite (Router.navTo 'Login', Bugfix 01.08.24, cs");
+          // this.history.back();    // cs; 01.08.24, fixed - back geht nicht da History aus
+          // Navigation zur login Seite manuell
+          var e = sap.ui.core.UIComponent.getRouterFor(this);
+          e.navTo("Login", {}, true);
           }, this.idleSeconds * 1e3);
         }
       },
