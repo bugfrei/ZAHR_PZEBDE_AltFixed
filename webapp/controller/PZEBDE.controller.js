@@ -250,7 +250,7 @@ sap.ui.define(
       _createQuantityConfirmDialog: function () {
         var e = this;
         this._quantityConfirmDialog = new u({
-          title: "Mengen Best�tigen",
+          title: "Mengen Bestätigen",
           type: "Message",
           content: [
             new g({ text: "Gutmenge (Gesamt)", labelFor: "inputYield" }),
@@ -380,7 +380,7 @@ sap.ui.define(
           ],
           beginButton: new o({
             type: b.Emphasized,
-            text: "Best�tigen",
+            text: "Bestätigen",
             press: function () {
               e._quantityConfirmDialog.getContent().forEach(function (t) {
                 if (t.getId() === "inputYield") {
@@ -748,7 +748,7 @@ sap.ui.define(
         };
         var a = {
           success: function (e, s) {
-            t.show("Arbeitsplatz wurde erfolgreich ge�ndert", {
+            t.show("Arbeitsplatz wurde erfolgreich geändert", {
               closeOnBrowserNavigation: false,
             });
             i.getView().byId("btWorkstationChange").setVisible(true);
@@ -883,7 +883,7 @@ sap.ui.define(
                 l +
                 "Es wurden " +
                 a.data.autoBreak +
-                " Vorg�nge automatisch beendet.";
+                " Vorgänge automatisch beendet.";
             }
             t.show(e === "/onKommenSet" ? n : l, {
               offset: "0 -400",
@@ -918,7 +918,7 @@ sap.ui.define(
             type: "Message",
             title: "Kommen erneut buchen?",
             content: new d({
-              text: "Ihre vorige Buchung war ebenfalls KOMMT. M�chten Sie wirklich KOMMT buchen?",
+              text: "Ihre vorige Buchung war ebenfalls KOMMT. Möchten Sie wirklich KOMMT buchen?",
             }),
             beginButton: new o({
               type: b.Emphasized,

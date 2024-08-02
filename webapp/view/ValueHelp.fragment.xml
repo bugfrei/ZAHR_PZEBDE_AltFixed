@@ -2,8 +2,8 @@
 	xmlns="sap.m"
 	xmlns:core="sap.ui.core">
 	<SelectDialog>
-		noDataText="Keine Arbeitspl‰tze gefunden"
-		title="Arbeitsplatz w‰hlen"
+		noDataText="Keine Arbeitspl√§tze gefunden"
+		title="Arbeitsplatz w√§hlen"
 		search="handleSearch"
 		confirm="handleValueHelpClose"
 		cancel="handleValueHelpClose"

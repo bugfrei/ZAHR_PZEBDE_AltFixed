@@ -152,7 +152,7 @@
 																	</sap.ui.layout.form:FormElement>
 																	<sap.ui.layout.form:FormElement id="bdeDetailElement13">
 																		<sap.ui.layout.form:fields>
-																			<Button xmlns="sap.m" text="Arbeitsplatz Ändern" id="btWorkstationChange" width="100%" class="myCustomButton" press="onPressWorkstationChange"/>
+																			<Button xmlns="sap.m" text="Arbeitsplatz Ã¤ndern" id="btWorkstationChange" width="100%" class="myCustomButton" press="onPressWorkstationChange"/>
 																		</sap.ui.layout.form:fields>
 																	</sap.ui.layout.form:FormElement>
 																	<sap.ui.layout.form:FormElement id="bdeDetailElement14">
@@ -185,9 +185,9 @@
 																<items>
 																	<sap.ui.layout:VerticalLayout width="100%" id="layout2" class="sapUiMediumMarginEnd">
 																		<Label text="Menge Soll:" width="100%" id="lblMengeSoll" labelFor="bdeDetailInput11"/>
-																		<Input id="bdeDetailInput11" placeholder="Menge Soll" editable="false" width="100%" class="sapUiSmallMarginBottom" description="Stück"/>
+																		<Input id="bdeDetailInput11" placeholder="Menge Soll" editable="false" width="100%" class="sapUiSmallMarginBottom" description="StÃ¼ck"/>
 																		<Label text="Menge Ist:" width="100%" id="lblMengeIst" labelFor="bdeDetailInput12"/>
-																		<Input id="bdeDetailInput12" placeholder="Menge Ist" editable="false" width="100%" class="sapUiSmallMarginBottom" description="Stück"/>
+																		<Input id="bdeDetailInput12" placeholder="Menge Ist" editable="false" width="100%" class="sapUiSmallMarginBottom" description="StÃ¼ck"/>
 																	</sap.ui.layout:VerticalLayout>
 																	<sap.ui.layout:VerticalLayout width="100%" id="layout3">
 																		<Label text="Zeit Soll:" width="100%" id="lblZeitSoll" labelFor="bdeDetailInput9"/>
@@ -225,7 +225,7 @@
 																	</sap.ui.layout.form:FormElement>
 																	<!--<sap.ui.layout.form:FormElement id="bdeDetailElement11">-->
 																	<!--	<sap.ui.layout.form:fields>-->
-																	<!--		<Button xmlns="sap.m" text="Mengenrückmeldung" press="onPressMenge" id="bdeDetailbutton2" width="100%" type="Emphasized" class="myCustomButton"/>-->
+																	<!--		<Button xmlns="sap.m" text="MengenrÃ¼ckmeldung" press="onPressMenge" id="bdeDetailbutton2" width="100%" type="Emphasized" class="myCustomButton"/>-->
 																	<!--	</sap.ui.layout.form:fields>-->
 																	<!--</sap.ui.layout.form:FormElement>-->
 																	<sap.ui.layout.form:FormElement id="bdeDetailElement12">
@@ -246,12 +246,12 @@
 									</sap.ui.layout:Grid>
 								</content>
 							</IconTabFilter>
-							<IconTabFilter text="PZE Übersicht" icon="sap-icon://list" id="filter3">
+							<IconTabFilter text="PZE Ãœbersicht" icon="sap-icon://list" id="filter3">
 								<content>
-									<Table id="pzeOvTable" noDataText="Keine Einträge konnten gefunden werden" items="{/pzeTableData/results}">
+									<Table id="pzeOvTable" noDataText="Keine EintrÃ¤ge konnten gefunden werden" items="{/pzeTableData/results}">
 										<headerToolbar>
 											<OverflowToolbar>
-												<Title text="Zeitenrückmeldung PZE" level="H2"/>
+												<Title text="ZeitenrÃ¼ckmeldung PZE" level="H2"/>
 												<ToolbarSpacer/>
 												<Button tooltip="View Sort Settings" icon="sap-icon://sort" press="handleSortButtonPressed"/>
 												<Button tooltip="View Filter Settings" icon="sap-icon://filter" press="handleFilterButtonPressed"/>
@@ -282,13 +282,13 @@
 									</Table>
 								</content>
 							</IconTabFilter>
-							<IconTabFilter text="BDE Übersicht" icon="sap-icon://list" id="filter4">
+							<IconTabFilter text="BDE Ãœbersicht" icon="sap-icon://list" id="filter4">
 								<content>
 									<TextArea xmlns="sap.m" value="AP = Automatisch Pausiert" rows="1" id="area0" width="100%" editable="false"/>
-									<Table id="bdeOvTable" noDataText="Keine Einträge konnten gefunden werden" items="{/bdeTableData/results}">
+									<Table id="bdeOvTable" noDataText="Keine EintrÃ¤ge konnten gefunden werden" items="{/bdeTableData/results}">
 										<headerToolbar>
 											<OverflowToolbar>
-												<Title text="Zeitenrückmeldung BDE" level="H2"/>
+												<Title text="ZeitenrÃ¼ckmeldung BDE" level="H2"/>
 												<ToolbarSpacer/>
 												<Button tooltip="View Sort Settings" icon="sap-icon://sort" press="handleSortButtonPressedBde"/>
 												<Button tooltip="View Filter Settings" icon="sap-icon://filter" press="handleFilterButtonPressedBde"/>

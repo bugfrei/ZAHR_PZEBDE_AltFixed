@@ -17,7 +17,7 @@
 							</sap.ui.layout.form:FormElement>
 							<sap.ui.layout.form:FormElement id="bdeQuantityElement2">
 								<sap.ui.layout.form:fields>
-									<Button xmlns="sap.m" text="Mengen bestätigen" id="btnQuantityConfirm" type="Emphasized" width="100%"
+									<Button xmlns="sap.m" text="Mengen bestÃ¤tigen" id="btnQuantityConfirm" type="Emphasized" width="100%"
 										class="myCustomButton sapUiSmallMarginTop" press="handleQuantityConfirm"/>
 								</sap.ui.layout.form:fields>
 							</sap.ui.layout.form:FormElement>

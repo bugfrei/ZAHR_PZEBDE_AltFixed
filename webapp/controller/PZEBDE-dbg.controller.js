@@ -287,11 +287,11 @@ sap.ui.define([
 		onPressUnterbrechung: function () {
 			this._quantityConfirmModus = "FAP";
 			if (this.getView().byId("bdeDetailInput1").getValue()) {
-				//Fertigungsauftr�ge
+				//Fertigungsaufträge
 				this._createQuantityConfirmDialog();
 			}
 			else {
-				//CS-Auftr�ge und Projekte
+				//CS-Auftr#ge und Projekte
 				this._pushBreakOperation();
 			}
 		},
@@ -299,11 +299,11 @@ sap.ui.define([
 		onPressEnde: function () {
 			this._quantityConfirmModus = "FAE";
 			if (this.getView().byId("bdeDetailInput1").getValue()) {
-				//Fertigungsauftr�ge
+				//Fertigungsaufträge
 				this._createQuantityConfirmDialog();
 			}
 			else {
-				//CS-Auftr�ge und Projekte
+				//CS-Aufträge und Projekte
 				this._pushEndOperation();
 			}
 		},
@@ -311,7 +311,7 @@ sap.ui.define([
 		_createQuantityConfirmDialog: function () {
 			var that = this;
 			this._quantityConfirmDialog = new Dialog({
-				title: "Mengen Best�tigen",
+				title: "Mengen Bestätigen",
 				type: "Message",
 				content: [
 					new Label({
@@ -361,7 +361,7 @@ sap.ui.define([
 								return;
 							}
 
-							//Mengen aus Popup wieder in normale Mengenfelder schreiben f�r senden der Daten an Backend
+							//Mengen aus Popup wieder in normale Mengenfelder schreiben für senden der Daten an Backend
 							that.byId("bdeDetailInput7").setValue(that._quantityYield);
 							that.byId("bdeDetailInput8").setValue(that._quantityScrap);
 							//Senden der Daten an Backend
@@ -421,7 +421,7 @@ sap.ui.define([
 								return;
 							}
 
-							//Mengen aus Popup wieder in normale Mengenfelder schreiben f�r senden der Daten an Backend
+							//Mengen aus Popup wieder in normale Mengenfelder schreiben für senden der Daten an Backend
 							that.byId("bdeDetailInput7").setValue(that._quantityYield);
 							that.byId("bdeDetailInput8").setValue(that._quantityScrap);
 							//Senden der Daten an Backend
@@ -437,7 +437,7 @@ sap.ui.define([
 				],
 				beginButton: new Button({
 					type: ButtonType.Emphasized,
-					text: "Best�tigen",
+					text: "Bestätigen",
 					press: function () {
 						that._quantityConfirmDialog.getContent().forEach(function (oItem) {
 							if (oItem.getId() === "inputYield") {
@@ -476,7 +476,7 @@ sap.ui.define([
 							return;
 						}
 
-						//Mengen aus Popup wieder in normale Mengenfelder schreiben f�r senden der Daten an Backend
+						//Mengen aus Popup wieder in normale Mengenfelder schreiben für senden der Daten an Backend
 						that.byId("bdeDetailInput7").setValue(that._quantityYield);
 						that.byId("bdeDetailInput8").setValue(that._quantityScrap);
 						//Senden der Daten an Backend
@@ -606,7 +606,7 @@ sap.ui.define([
 		// 	//Prepare oParameters
 		// 	var oParameters = {
 		// 		success: function (oData, response) {
-		// 			MessageToast.show("Mengenr�ckmeldung war erfolgreich.", {
+		// 			MessageToast.show("Mengenrückmeldung war erfolgreich.", {
 		// 				offset: "0 -400",
 		// 				closeOnBrowserNavigation: false
 		// 			});
@@ -640,7 +640,7 @@ sap.ui.define([
 			var oParameters = {
 				success: function (oData, response) {
 					if (response.data.multiOperation === "X") {
-						// MessageStrip TODO => Daten m�ssen an vorherigen Screen mitgegeben werden
+						// MessageStrip TODO => Daten müssen an vorherigen Screen mitgegeben werden
 						MessageToast.show("Vorgang erfolgreich begonnen. Mehrmaschinenbedienung Aktiv", {
 							offset: "0 -400",
 							closeOnBrowserNavigation: false
@@ -775,7 +775,7 @@ sap.ui.define([
 				this.getView().byId("lblDetailFA").setVisible(true);
 				this.getView().byId("lblDetailCS").setVisible(false);
 				this.getView().byId("lblDetailOP").setVisible(true);
-				//Mengenr�ckmeldung
+				//Mengenrückmeldung
 				this.getView().byId("bdeDetailElement7").setVisible(true);
 				this.getView().byId("bdeDetailElement8").setVisible(true);
 				//Soll/Ist
@@ -803,7 +803,7 @@ sap.ui.define([
 				this.getView().byId("lblDetailFA").setVisible(false);
 				this.getView().byId("lblDetailCS").setVisible(true);
 				this.getView().byId("lblDetailOP").setVisible(true);
-				//Mengenr�ckmeldung
+				//Mengenrückmeldung
 				this.getView().byId("bdeDetailElement7").setVisible(false);
 				this.getView().byId("bdeDetailElement8").setVisible(false);
 				//Soll/Ist
@@ -830,7 +830,7 @@ sap.ui.define([
 				this.getView().byId("lblDetailFA").setVisible(false);
 				this.getView().byId("lblDetailCS").setVisible(false);
 				this.getView().byId("lblDetailOP").setVisible(false);
-				//Mengenr�ckmeldung
+				//Mengenrückmeldung
 				this.getView().byId("bdeDetailElement7").setVisible(false);
 				this.getView().byId("bdeDetailElement8").setVisible(false);
 				//Soll/Ist
@@ -911,7 +911,7 @@ sap.ui.define([
 			//Prepare oParameters
 			var oParameters = {
 				success: function (oData, response) {
-					MessageToast.show("Arbeitsplatz wurde erfolgreich ge�ndert", {
+					MessageToast.show("Arbeitsplatz wurde erfolgreich geändert", {
 						closeOnBrowserNavigation: false
 					});
 					that.getView().byId("btWorkstationChange").setVisible(true);
@@ -1074,13 +1074,13 @@ sap.ui.define([
 			//Prepare oParameters
 			var oParameters = {
 				success: function (oData, response) {
-					//Timeline mit neuem Item bef�llen
+					//Timeline mit neuem Item befüllen
 					that.addTimelineItem(response.data, sPath);
 					that.onNavBack();
 					var kommenText = "Kommen erfolgreich gebucht.";
 					var gehenText = "Gehen erfolgreich gebucht.";
 					if (response.data.autoBreak > 0) {
-						gehenText = gehenText + "Es wurden " + response.data.autoBreak + " Vorg�nge automatisch beendet.";
+						gehenText = gehenText + "Es wurden " + response.data.autoBreak + " Vorgänge automatisch beendet.";
 					}
 					MessageToast.show((sPath === "/onKommenSet") ? kommenText : gehenText, {
 						offset: "0 -400",
@@ -1119,7 +1119,7 @@ sap.ui.define([
 					type: "Message",
 					title: "Kommen erneut buchen?",
 					content: new Text({
-						text: "Ihre vorige Buchung war ebenfalls KOMMT. M�chten Sie wirklich KOMMT buchen?"
+						text: "Ihre vorige Buchung war ebenfalls KOMMT. Möchten Sie wirklich KOMMT buchen?"
 					}),
 					beginButton: new Button({
 						type: ButtonType.Emphasized,
@@ -1166,7 +1166,7 @@ sap.ui.define([
 			var oParameters = {
 				filters: aFilters,
 				success: function (oData, response) {
-					//Timeline mit Items bef�llen
+					//Timeline mit Items befüllen
 					that.addTimelineItems(response.data.results);
 				},
 				error: function (oError) {
@@ -1540,12 +1540,12 @@ sap.ui.define([
 		// checkOperationInput: function () {
 		// 	if (!this.getView().byId("pzeInput0").getValue() &&
 		// 		!this.getView().byId("pzeInput1").getValue()) {
-		// 		MessageBox.show("Entweder der FA oder das PS muss gef�llt sein");
+		// 		MessageBox.show("Entweder der FA oder das PS muss gefüllt sein");
 		// 		return false;
 		// 	}
 		// 	if (this.getView().byId("pzeInput1").getValue() &&
 		// 		!this.getView().byId("pzeInput2").getValue()) {
-		// 		MessageBox.show("Vorgangsnummer muss gef�llt sein");
+		// 		MessageBox.show("Vorgangsnummer muss gefüllt sein");
 		// 		return false;
 		// 	}
 		// 	return true;
