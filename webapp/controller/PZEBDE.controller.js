@@ -117,7 +117,7 @@ sap.ui.define(
           console.log("Timeout - Zurück zur Login-Seite (Router.navTo 'Login', Bugfix 01.08.24, cs");
           // this.history.back();    // cs; 01.08.24, fixed - back geht nicht da History aus
           // Navigation zur login Seite manuell
-          var e = sap.ui.core.UIComponent.getRouterFor(thas);
+          var e = sap.ui.core.UIComponent.getRouterFor(that);
           e.navTo("Login", {}, true);
           }, this.idleSeconds * 1e3);
         }
