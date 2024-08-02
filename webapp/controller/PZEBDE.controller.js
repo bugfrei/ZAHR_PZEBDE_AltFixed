@@ -112,11 +112,12 @@ sap.ui.define(
         console.log(`resetTimer: this._xmlViewId = ${this._xmlViewId} (soll=__xmlview1)`);
         if (this._xmlViewId === "__xmlview1") {
           console.log(`setTimeout (call), this.idleSeconds = ${this.idleSeconds}`);
+          var that = this;
           this.idleTimer = setTimeout(function () {
           console.log("Timeout - Zurück zur Login-Seite (Router.navTo 'Login', Bugfix 01.08.24, cs");
           // this.history.back();    // cs; 01.08.24, fixed - back geht nicht da History aus
           // Navigation zur login Seite manuell
-          var e = sap.ui.core.UIComponent.getRouterFor(this);
+          var e = sap.ui.core.UIComponent.getRouterFor(thas);
           e.navTo("Login", {}, true);
           }, this.idleSeconds * 1e3);
         }
