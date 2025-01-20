@@ -146,6 +146,8 @@ sap.ui.define(
         this.getView().byId("pzeButton1").setEnabled(true);
       },
       whenUserIdle: function () {
+        // TODO: Prüfen ob und wann diese Funktion aufgerrufen wird, cs 11.09.24
+        // history.back() funktioniert nicht, da History abgeschaltet ist
         this.history.back();
       },
       initOvModel: function (e) {
